@@ -77,7 +77,7 @@ function getVeg(subTotal,head1,head2) {
 				}
 		}
 		var countVeg = selectedVeg.length;
-		if (countVeg >=2) {
+		if (countVeg >=1) {
 				vegTotal = (countVeg -1);
 		} else {
 			vegTotal= 0;
@@ -90,6 +90,7 @@ function getVeg(subTotal,head1,head2) {
 				countVeg = (countVeg - 1);
 			} else if (countVeg == 2) {
 				head2 = head2+1+"<br />";
+				countVeg= (countVeg - 1);
 			} else {
 				head2 = head2+1+"<br />";
 				countVeg = (countVeg - 1);
